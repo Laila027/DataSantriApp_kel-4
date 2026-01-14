@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">DataSantriApp</string>
+    <string name="tambah_data">Tambah Data</string>
+    <string name="alamat_hint">Alamat Santri</string>
+    <string name="judul_data_santri">Data Santri</string>
+    <string name="nama_hint">Nama Santri</string>
+</resources>
+
+
+
+
+ 
