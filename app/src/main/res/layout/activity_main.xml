@@ -6,21 +6,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#FFF8F0"
+    android:background="#FFB2C5"
     android:padding="20dp"
     tools:context=".MainActivity">
 
     <!-- Judul -->
     <TextView
-        android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="📖 Data Santri"
-        android:textSize="24sp"
+        android:textColor="#2E7D32"      android:textSize="24sp"
         android:textStyle="bold"
-        android:textColor="#6B4E71"
         android:layout_gravity="center"
-        android:layout_marginBottom="16dp"/>
+        android:layout_marginTop="20dp" />
 
     <!-- Tombol Tambah -->
     <Button
@@ -28,9 +26,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Tambah Santri ✨"
-        android:textColor="#FFFFFF"
-        android:backgroundTint="#A267AC"
-        android:layout_marginBottom="16dp"/>
+        android:backgroundTint="#5AB074"  android:textColor="#FFFFFF"        android:textStyle="bold"
+        app:cornerRadius="20dp"           android:layout_margin="16dp" />
 
     <!-- ListView -->
     <ListView

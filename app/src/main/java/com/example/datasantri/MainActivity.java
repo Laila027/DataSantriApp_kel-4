@@ -19,12 +19,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        // Mengubah warna background seluruh layar jadi soft pink
+        findViewById(android.R.id.content).setBackgroundColor(android.graphics.Color.parseColor("#FCE4EC"));
 
         listViewSantri = findViewById(R.id.listViewSantri);
         btnAddSantri = findViewById(R.id.btnAddSantri);
 
         dataSantri = new ArrayList<>();
-        adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, dataSantri);
+        // Sekarang kita pakai adapter buatan sendiri agar warnanya muncul
+        adapter = new SantriAdapter(this, dataSantri);
         listViewSantri.setAdapter(adapter);
 
         // --- AMBIL DATA DARI DATABASE ONLINE ---
